@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button">Button</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name</string>
+    <string name="todo1">TODO</string>
+
+</resources>
