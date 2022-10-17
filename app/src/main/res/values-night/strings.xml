@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="button">Button</string>
-    <string name="todo">TODO</string>
-    <string name="name">Name</string>
-    <string name="todo1">TODO</string>
-
+    <string name="name">Name :</string>
+    <string name="backgroundImage" />
+    <string name="health">health</string>
+    <string name="run">Run</string>
+    <string name="view_medical_id">View Medical ID</string>
+    <string name="edit_medical_id">Edit Medical ID</string>
+    <string name="add_reminders">Add Reminders</string>
+    <string name="Run">Run</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="total_distance">Total Distance :</string>
+    <string name="average_pace">Average Pace :</string>
+    <string name="number_of_steps">Number of Steps :</string>
+    <string name="MedicalId">Medical ID</string>
+    <string name="Calender">Calendar</string>
+    <string name="date_of_birth">Date of Birth :</string>
+    <string name="medical_conditions">Medical Conditions :</string>
+    <string name="allergies_and_reactions"><![CDATA[Allergies & Reactions :]]></string>
+    <string name="medications">Medications :</string>
+    <string name="viewPrescription">View Prescription</string>
+    <string name="view_image">View Image</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="MedID_Submit">Submit</string>
+    <string name="reminder">Reminder</string>
+    <string name="appointmentDate">Date</string>
+    <string name="appointmentName">Appointment</string>
+    <string name="appointmentTime">Time</string>
+    <string name="appointmentSave">Save</string>
+    <string name="workoutMenu">Workout</string>
+    <string name="mealsMenu">Meals</string>
+    <string name="homeMenu">Home</string>
+    <string name="healthMenu">Health</string>
+    <string name="routinesMenu">Routines</string>
 </resources>
+
