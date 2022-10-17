@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId()){
+                case R.id.home_nav:
+                    replaceFragment(new HealthRunFragment());
+                    break;
                 case R.id.meals_nav:
                     replaceFragment(new MealFragment());
                     break ;
@@ -33,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.workout_nav:
                     replaceFragment(new HealthRunFragment());
                     break;
+                case R.id.routines_nav:
+                    replaceFragment(new HealthRunFragment());
+                    break;
+
             }
             return true;
         });
