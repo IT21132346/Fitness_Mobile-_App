@@ -12,6 +12,18 @@
         android:theme="@style/Theme.Health"
         tools:targetApi="31">
         <activity
+            android:name=".BmiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CountdownTimer"
+            android:exported="false" />
+        <activity
+            android:name=".BmiCalculator"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutPlan"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

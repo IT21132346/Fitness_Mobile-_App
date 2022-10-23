@@ -19,6 +19,9 @@
     <color name="Red">#FF0000</color>
     <color name="Lite_gray">#BFC9CA</color>
     <color name="Dark_gray">#818589</color>
+    <color name="trans">#00000000</color>
+    <color name="warn">#FF1313</color>
+    <color name="halfwarn">#483FC8</color>
 
 </resources>
 
