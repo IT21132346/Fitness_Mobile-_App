@@ -76,7 +76,7 @@ public class BmiActivity extends AppCompatActivity {
         }
         else if(floatBmi<25 && floatBmi>18.4){
             BmiCategoryDispaly.setText("Normal");
-            //mBackground.setBackgroundColor(Color.YELLOW);
+            mBackground.setBackgroundColor(Color.GREEN);
             BmiImage.setImageResource((R.drawable.ok));
         }
         else if(floatBmi<29.4 && floatBmi>25){

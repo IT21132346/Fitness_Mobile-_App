@@ -36,7 +36,7 @@
 
     <RelativeLayout
         android:id="@+id/contentlayout"
-        android:layout_width="match_parent"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:padding="20dp">
