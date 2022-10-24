@@ -34,5 +34,9 @@
     <string name="homeMenu">Home</string>
     <string name="healthMenu">Health</string>
     <string name="routinesMenu">Routines</string>
+    <string name="enter_full_name">enter full name</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="view_details">View Details</string>
 </resources>
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_full_name">enter full name</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="view_details">View Details</string>
+</resources>
