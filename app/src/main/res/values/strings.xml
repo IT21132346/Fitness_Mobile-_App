@@ -44,6 +44,12 @@
     <string name="previous">Previous</string>
     <string name="todo1">TODO</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- Strings used for Manifest -->
+    <string name="map_key" translatable="false">AIzaSyB5TV3WKNkL5oFV8U2L4caFIsBQIkgkP9s</string>
+    <string name="step_counter">android.hardware.sensor.stepcounter</string>
+    <string name="step_detector">android.hardware.sensor.stepdetector</string>
+    <string name="enter_full_name">enter full name</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="view_details">View Details</string>
 </resources>
