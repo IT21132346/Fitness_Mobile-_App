@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(new MealFragment());
+        replaceFragment(new WorkoutPage());
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
@@ -34,20 +35,18 @@ public class MainActivity extends AppCompatActivity {
                     replaceFragment(new HealthFragment());
                     break;
                 case R.id.workout_nav:
-                    replaceFragment(new HealthRunFragment());
+                    replaceFragment(new WorkoutPage());
                     break;
-                case R.id.routines_nav:
-                    replaceFragment(new HealthRunFragment());
-                    break;
+
 
             }
             return true;
         });
     }
-  private void replaceFragment(Fragment fragment){
+    private void replaceFragment(Fragment fragment){
       FragmentManager fragmentManager = getSupportFragmentManager();
       FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
       fragmentTransaction.replace(R.id.frame_layout, fragment);
       fragmentTransaction.commit();
-  }
+    }
 }
