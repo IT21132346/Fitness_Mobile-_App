@@ -83,8 +83,8 @@ public class HealthCalenderActivity extends AppCompatActivity implements Calenda
 
     @Override
     public void onItemClick(int position, String dayText) {
-        if (dayText.equals("")){
-            String message = "Selected date" + dayText + " " + monthYearFromDate(selectedDate);
+        if (!dayText.equals("")){
+            String message = "Selected date " + dayText + " " + monthYearFromDate(selectedDate);
             Toast.makeText(this, message, Toast.LENGTH_LONG).show();
         }
     }
