@@ -53,6 +53,15 @@ public class HealthFragment extends Fragment {
             }
         });
 
+        // View MID
+        Button btn_addRem = (Button)view.findViewById(R.id.btn_addRem);
+        btn_addRem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), HealthCalenderActivity.class));
+            }
+        });
+
         return view;
     }
 }

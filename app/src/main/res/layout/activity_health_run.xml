@@ -74,13 +74,26 @@
             tools:ignore="TextContrastCheck" />
 
         <TextView
+            android:id="@+id/stepView"
+            android:layout_width="152dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.649"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
             android:id="@+id/textView3"
             style="@style/txtStyles"
-            android:layout_width="366dp"
-            android:layout_height="31dp"
+            android:layout_width="152dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="4dp"
             android:text="@string/number_of_steps"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintHorizontal_bias="0.011"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="TextContrastCheck" />

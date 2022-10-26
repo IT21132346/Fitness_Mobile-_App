@@ -51,5 +51,20 @@
     <string name="update">Update</string>
     <string name="delete">Delete</string>
     <string name="view_details">View Details</string>
+    <string name="title_activity_health_calender">HealthCalenderActivity</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_health_cal">HealthCalActivity</string>
+    <string name="leftBtn"><![CDATA[<-]]></string>
+    <string name="rightBtn"><![CDATA[->]]></string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="calendarWeekly">Weekly</string>
 </resources>
 
