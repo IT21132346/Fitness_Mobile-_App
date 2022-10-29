@@ -24,17 +24,21 @@
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404-test/app/src/main/res/menu/bottom_menu.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/activity_health_cal.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/activity_health_calendar.xml" value="0.23645833333333333" />
-        <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/activity_health_calender.xml" value="0.2" />
+        <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/activity_health_calender.xml" value="0.264" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/activity_health_edit_med.xml" value="0.23645833333333333" />
+        <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/activity_health_event_edit.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/activity_health_run.xml" value="0.264" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/activity_health_view_med.xml" value="0.22239583333333332" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/activity_week_view.xml" value="0.264" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/calendar_cell.xml" value="0.23541666666666666" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/content_health_calender.xml" value="0.23645833333333333" />
+        <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/event_cell.xml" value="0.264" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/fragment_first.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/fragment_health.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/fragment_health_calendar.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/fragment_health_medical_i_d.xml" value="0.23645833333333333" />
+        <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/fragment_health_reminder.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/fragment_health_run.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/fragment_health_veiw_m_i_d.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/404/app/src/main/res/layout/fragment_health_view_medical_i_d.xml" value="0.23645833333333333" />
@@ -56,23 +60,6 @@
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/Health/app/src/main/res/layout/page2.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/Health/app/src/main/res/menu/bottom_menu.xml" value="0.264" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/Health/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2425" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/drawable/button_background.xml" value="0.3675" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/drawable/card_background.xml" value="0.3675" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/drawable/male_female_focus.xml" value="0.3675" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/drawable/male_female_notfocus.xml" value="0.3675" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/drawable/plus_minus.xml" value="0.3675" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/activity_bmi.xml" value="0.264" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/activity_bmi_calculator.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/activity_bmicalculatora.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/activity_countdown_timer.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/activity_countdowntimera.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/activity_workout_plan.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/activity_workoutplana.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/fragment_bmi_calculator.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/fragment_countdown_timer.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/fragment_workout_page.xml" value="0.23731884057971014" />
-        <entry key="..\:/Users/pasin/AndroidStudioProjects/404/app/src/main/res/layout/fragment_workout_plan.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

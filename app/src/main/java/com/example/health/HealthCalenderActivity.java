@@ -1,9 +1,13 @@
 package com.example.health;
 
+import static com.example.health.CalendarUtil.daysInMonthArray;
+import static com.example.health.CalendarUtil.monthYearFromDate;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -18,14 +22,14 @@ public class HealthCalenderActivity extends AppCompatActivity implements Calenda
 
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
-    private LocalDate selectedDate;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health_calender);
         initWidget();
-        selectedDate = LocalDate.now();
+        CalendarUtil.selectedDate = LocalDate.now();
         setMonthView();
     }
 
@@ -35,8 +39,8 @@ public class HealthCalenderActivity extends AppCompatActivity implements Calenda
     }
 
     private void setMonthView() {
-        monthYearText.setText(monthYearFromDate(selectedDate));
-        ArrayList<String> daysInMonth = daysInMonthArray(selectedDate);
+        monthYearText.setText(monthYearFromDate(CalendarUtil.selectedDate));
+        ArrayList<LocalDate> daysInMonth = daysInMonthArray(CalendarUtil.selectedDate);
 
         CalendarAdapter calendarAdapter = new CalendarAdapter(daysInMonth, this);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);
@@ -44,48 +48,25 @@ public class HealthCalenderActivity extends AppCompatActivity implements Calenda
         calendarRecyclerView.setAdapter(calendarAdapter);
     }
 
-    private ArrayList<String> daysInMonthArray(LocalDate date) {
-        ArrayList<String> daysInMonthArray = new ArrayList<>();
-        YearMonth yearMonth = YearMonth.from(date);
-
-        int daysInMonth = yearMonth.lengthOfMonth();
-        LocalDate firstOfMonth = selectedDate.withDayOfMonth(1);
-        int dayOfWeek = firstOfMonth.getDayOfWeek().getValue();
-
-        for (int i=1; i <= 42; i++){
-            if (i <= dayOfWeek || i > daysInMonth + dayOfWeek){
-                daysInMonthArray.add("");
-            }
-            else {
-                daysInMonthArray.add(String.valueOf(i - dayOfWeek));
-            }
-        }
-        return daysInMonthArray;
-    }
-
-    private String monthYearFromDate(LocalDate date){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMMM yyyy");
-        return date.format(formatter);
-    }
-
     public void previousMonth(View view) {
-        selectedDate = selectedDate.minusMonths(1);
+        CalendarUtil.selectedDate = CalendarUtil.selectedDate.minusMonths(1);
         setMonthView();
     }
 
     public void nextMonth(View view) {
-        selectedDate = selectedDate.plusMonths(1);
+        CalendarUtil.selectedDate = CalendarUtil.selectedDate.plusMonths(1);
         setMonthView();
     }
 
-    public void weeklyAction(View view) {
+    @Override
+    public void onItemClick(int position, LocalDate date) {
+        if (date != null){
+            CalendarUtil.selectedDate = date;
+            setMonthView();
+        }
     }
 
-    @Override
-    public void onItemClick(int position, String dayText) {
-        if (!dayText.equals("")){
-            String message = "Selected date " + dayText + " " + monthYearFromDate(selectedDate);
-            Toast.makeText(this, message, Toast.LENGTH_LONG).show();
-        }
+    public void weeklyAction(View view) {
+        startActivity(new Intent(this,WeekViewActivity.class));
     }
 }

@@ -14,4 +14,6 @@
     <string name="fri">FRI</string>
     <string name="sat">SAT</string>
     <string name="calendarWeekly">Weekly</string>
+    <string name="weekly">Weekly</string>
+    <string name="new_event">New Event</string>
 </resources>
