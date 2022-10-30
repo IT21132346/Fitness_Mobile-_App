@@ -3,7 +3,6 @@
     <color name="black">#000000</color>
     <color name="blue">#000099</color>
     <color name="white">#ffffff</color>
-
     <color name="primaryColor">#212121</color>
     <color name="primaryLightColor">#484848</color>
     <color name="primaryDarkColor">#000000</color>
@@ -12,6 +11,15 @@
     <color name="secondaryDarkColor">#0026ca</color>
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#ffffff</color>
-
+    <color name="aquaBlue">#00FFFF</color>
+    <color name="lite_orange">#FCB58F</color>
+    <color name="orange">#FE6F28</color>
+    <color name="gray_110">#6E6E6E</color>
+    <color name="Sporty_green">#5DFF65</color>
+    <color name="Red">#FF0000</color>
+    <color name="Lite_gray">#BFC9CA</color>
+    <color name="Dark_gray">#818589</color>
+    <color name="trans">#00000000</color>
+    <color name="warn">#FF1313</color>
+    <color name="halfwarn">#483FC8</color>
 </resources>
-
