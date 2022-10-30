@@ -12,7 +12,7 @@ import android.widget.Button;
 
 public class WorkoutPage extends Fragment {
 
-    Button btnWorkoutPlan,btnBmiCalculator,btnCountdownTimer;
+    Button btnWorkoutPlan,btnBmiCalculator,btnCountdownTimer,btnMusicPlayer;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -24,7 +24,7 @@ public class WorkoutPage extends Fragment {
         btnWorkoutPlan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(),WorkoutPlan.class);
+                Intent intent = new Intent(getActivity(),AddWorkoutPlan.class);
                 startActivity(intent);
             }
         });
@@ -45,6 +45,15 @@ public class WorkoutPage extends Fragment {
                 startActivity(intent);
             }
         });
+
+//        btnMusicPlayer = view.findViewById(R.id.btnmusicplayer);
+//        btnMusicPlayer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getActivity(),MusicPlsyer.class);
+//                startActivity(intent);
+//            }
+//        });
 
         return view;
     }
