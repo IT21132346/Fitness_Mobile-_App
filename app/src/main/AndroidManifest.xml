@@ -56,9 +56,10 @@
         <activity
             android:name=".BmiCalculator"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".WorkoutPlan"-->
-<!--            android:exported="false" />-->
+
+        <activity
+            android:name=".AddWorkoutPlan"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
