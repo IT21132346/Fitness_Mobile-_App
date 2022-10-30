@@ -39,6 +39,48 @@
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/Health/app/src/main/res/layout/page2.xml" value="0.23645833333333333" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/Health/app/src/main/res/menu/bottom_menu.xml" value="0.264" />
         <entry key="..\:/Study_Materials/SLIIT/Y2/Sem_2/MAD/Assigment/Health/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2425" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/alaram.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/alarm.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/edit_background.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/floating_button_foreground.xml" value="0.2035" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/ic_add.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.196" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/ic_bmi.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/ic_empty.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/ic_food.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/drawable/plus_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/font/alfa_slab_one.xml" value="0.125" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/font/concert_one.xml" value="0.2833333333333333" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/activity_add_routine.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/activity_main_reminder.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/activity_notification_message.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/activity_reminder.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/activity_remindermain.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/activity_update_routine.xml" value="0.14719202898550723" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_health.xml" value="0.264" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_health_calendar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_health_medical_i_d.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_health_reminder.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_health_run.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_health_veiw_m_i_d.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_meal.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_reminder.xml" value="0.253125" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_routine.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_routine_reminder.xml" value="0.264" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/fragment_water_intake.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/my_row.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/notification_layout.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/reminder_item.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/routine_management.xml" value="0.2" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/routine_view.xml" value="0.264" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/single_reminder_file.xml" value="0.23802083333333332" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/layout/single_resource.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/menu/bottom_menu.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/Navinga/AndroidStudioProjects/404/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

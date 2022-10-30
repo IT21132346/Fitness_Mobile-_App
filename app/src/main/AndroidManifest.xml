@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.health">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,7 @@
         android:theme="@style/Theme.Health"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.health.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.example.health.ReminderActivity" />
+        <receiver android:name="com.example.health.AlarmBroadcast"/>
+        <activity android:name="com.example.health.RoutineManagementActivity" />
+        <activity android:name="com.example.health.RoutineViewActivity" />
+        <activity android:name="com.example.health.RoutineAddActivity" />
+        <activity android:name="com.example.health.RoutineUpdate" />
+
+
     </application>
 
 </manifest>

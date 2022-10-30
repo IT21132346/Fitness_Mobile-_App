@@ -12,6 +12,7 @@
     <color name="secondaryDarkColor">#0026ca</color>
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#ffffff</color>
+    <color name="aquaBlue">#00FFFF</color>
 
 </resources>
 
