@@ -42,9 +42,31 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="todo1">TODO</string>
 
+    <!-- Strings used for Manifest -->
+    <string name="map_key" translatable="false">AIzaSyB5TV3WKNkL5oFV8U2L4caFIsBQIkgkP9s</string>
+    <string name="step_counter">android.hardware.sensor.stepcounter</string>
+    <string name="step_detector">android.hardware.sensor.stepdetector</string>
+    <string name="enter_full_name">enter full name</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="view_details">View Details</string>
+    <string name="title_activity_health_calender">HealthCalenderActivity</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="title_activity_health_cal">HealthCalActivity</string>
+    <string name="leftBtn"><![CDATA[<-]]></string>
+    <string name="rightBtn"><![CDATA[->]]></string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="calendarWeekly">Weekly</string>
+    <string name="weekly">Weekly</string>
+    <string name="new_event">New Event</string>
+    <string name="daily">Daily</string>
 </resources>
-

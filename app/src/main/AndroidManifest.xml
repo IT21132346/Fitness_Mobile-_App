@@ -4,6 +4,20 @@
     package="com.example.health">
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="@string/step_detector"
+        android:required="false" />
+    <uses-feature
+        android:name="@string/step_counter"
+        android:required="false" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +26,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Health"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+        <activity
+            android:name=".HealthEventEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeekViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthCalenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthViewMedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HealthEditMedActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HealthRunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BmiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CountdownTimer"
+            android:exported="false" />
+        <activity
+            android:name=".BmiCalculator"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddWorkoutPlan"
+            android:exported="false" />
         <activity
             android:name="com.example.health.MainActivity"
             android:exported="true">
