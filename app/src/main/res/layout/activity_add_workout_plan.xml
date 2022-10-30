@@ -13,10 +13,7 @@
         android:id="@+id/img_backtoworkoutpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart=""
-        android:layout_marginTop=""
         android:contentDescription=""
-        app:srcCompat="@mipmap/ic_back"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView

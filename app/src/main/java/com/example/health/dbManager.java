@@ -1,5 +1,6 @@
 package com.example.health;
 
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -22,15 +23,19 @@ public class dbManager extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(query);
         String query1 = "create table UserDetails(name TEXT primary key, date TEXT, description TEXT,status TEXT)";
         sqLiteDatabase.execSQL(query1);
+        String query2 = "create table WaterDetails(id integer primary key autoincrement,value TEXT)";
+        sqLiteDatabase.execSQL(query2);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
         String query = "DROP TABLE IF EXISTS tbl_reminder";
-        String query1 = "DROP TABLE IF EXISTS UserDetails";   //sql query to check table with the same name or not
+        String query1 = "DROP TABLE IF EXISTS UserDetails";
+        String query2 = "DROP TABLE IF EXISTS WaterDetails";
         sqLiteDatabase.execSQL(query);
         sqLiteDatabase.execSQL(query1);
+        sqLiteDatabase.execSQL(query2);
         onCreate(sqLiteDatabase);
 
     }
@@ -63,6 +68,20 @@ public class dbManager extends SQLiteOpenHelper {
         contentValues.put("description", description);
         contentValues.put("status", status);
         long result=DB.insert("Userdetails", null, contentValues);
+        if(result==-1){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    public Boolean insertWaterdata(Integer value)
+    {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("value", value);
+
+        long result=DB.insert("Waterdetails", null, contentValues);
         if(result==-1){
             return false;
         }else{
@@ -116,6 +135,13 @@ public class dbManager extends SQLiteOpenHelper {
     {
         SQLiteDatabase DB = this.getWritableDatabase();
         Cursor cursor = DB.rawQuery("Select * from Userdetails", null);
+        return cursor;
+    }
+
+    public Cursor getdata1 ()
+    {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        Cursor cursor = DB.rawQuery("Select * from WaterDetails", null);
         return cursor;
     }
 
