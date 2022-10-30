@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryDarkColor"
-    tools:context=".HealthCalenderActivity">
+    tools:context=".WeekViewActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -27,13 +27,14 @@
         style="@style/headingTxtStyles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Calender"
+        android:text="@string/weekly"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
+        app:layout_constraintVertical_bias="0.024"
         tools:ignore="TextContrastCheck" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -48,11 +49,27 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.181">
 
+        <Button
+            android:id="@+id/btn_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/font1"
+            android:onClick="newEventAction"
+            android:text="@string/daily"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.35" />
+
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="68dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -64,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackground"
-                android:onClick="previousMonth"
+                android:onClick="previousWeek"
                 android:text="@string/leftBtn"
                 android:textColor="@color/secondaryColor"
                 android:textSize="20sp"
@@ -88,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackground"
-                android:onClick="nextMonth"
+                android:onClick="nextWeek"
                 android:text="@string/rightBtn"
                 android:textColor="@color/secondaryColor"
                 android:textSize="20sp"
@@ -176,9 +193,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/calenderRecyclerView"
-            android:layout_width="410dp"
-            android:layout_height="445dp"
-
+            android:layout_width="405dp"
+            android:layout_height="55dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -190,14 +206,24 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/font1"
-            android:onClick="weeklyAction"
-            android:text="@string/calendarWeekly"
-            android:textSize="25sp"
+            android:onClick="newEventAction"
+            android:text="@string/new_event"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/calenderRecyclerView"
-            app:layout_constraintVertical_bias="0.958" />
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/eventListView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_weekly"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

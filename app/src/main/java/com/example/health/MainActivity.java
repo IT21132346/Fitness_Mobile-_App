@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
             switch (item.getItemId()){
                 case R.id.home_nav:
-                    replaceFragment(new HealthRunFragment());
+                    replaceFragment(new WorkoutPage());
                     break;
                 case R.id.meals_nav:
                     replaceFragment(new MealFragment());

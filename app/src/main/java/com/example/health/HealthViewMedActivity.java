@@ -87,15 +87,15 @@ public class HealthViewMedActivity extends AppCompatActivity {
                 String allergiesTXT = allergies.getText().toString();
                 String medConditionsTXT = medConditions.getText().toString();
 
-                // get Image
-                String imgPath = uri.toString();
-                Bitmap bitmap = BitmapFactory.decodeFile(imgPath);
-                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.PNG, 0, byteArrayOutputStream);
-                byte[] bytesImage = byteArrayOutputStream.toByteArray();
+//                // get Image
+//                String imgPath = uri.toString();
+//                Bitmap bitmap = BitmapFactory.decodeFile(imgPath);
+//                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+//                bitmap.compress(Bitmap.CompressFormat.PNG, 0, byteArrayOutputStream);
+//                byte[] bytesImage = byteArrayOutputStream.toByteArray();
 
                 // to DB
-                Boolean checkUpdateData = DB.updateUserData(nameTXT, dobTxt, allergiesTXT, medConditionsTXT, bytesImage);
+                Boolean checkUpdateData = DB.updateUserData(nameTXT, dobTxt, allergiesTXT, medConditionsTXT);
                 if (checkUpdateData == true)
                     Toast.makeText(HealthViewMedActivity.this,"Entry Updated Successfully", Toast.LENGTH_LONG).show();
                 else
