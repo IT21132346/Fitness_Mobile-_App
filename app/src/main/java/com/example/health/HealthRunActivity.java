@@ -31,24 +31,38 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
-public class HealthRunActivity extends FragmentActivity implements OnMapReadyCallback, SensorEventListener, StepListener {
+public class HealthRunActivity extends FragmentActivity implements OnMapReadyCallback, SensorEventListener {
 
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
     private static final int REQUEST_CODE = 101;
 
+    private TextView textView;
+    private SensorManager mSensorManager;
+    private Sensor mStepCounterSensor;
+    private Sensor mStepDetectorSensor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health_run);
-        TextView textView = (TextView) findViewById(R.id.textView3);
 
-        SensorManager mSensorManager = (SensorManager)
+        // For Step counter
+        textView = (TextView) findViewById(R.id.stepView);
+        mSensorManager = (SensorManager)
                 getSystemService(Context.SENSOR_SERVICE);
-        Sensor mStepCounterSensor = mSensorManager
+        mStepCounterSensor = mSensorManager
                 .getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
-        Sensor mStepDetectorSensor = mSensorManager
+        mStepDetectorSensor = mSensorManager
                 .getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
+
+        Button btn_start = (Button) findViewById(R.id.btn_start);
+        btn_start.setOnClickListener(new View.OnClickListener() {
+        public void onClick(View view) {
+            onResume();
+        }
+    });
+
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         fetchLastLocation();
@@ -98,8 +112,35 @@ public class HealthRunActivity extends FragmentActivity implements OnMapReadyCal
     }
 
     @Override
-    public void onSensorChanged(SensorEvent sensorEvent) {
+    public void onSensorChanged(SensorEvent event) {
+        Sensor sensor = event.sensor;
+        float[] values = event.values;
+        int value = -1;
 
+        if (values.length > 0) {
+            value = (int) values[0];
+        }
+
+        if (sensor.getType() == Sensor.TYPE_STEP_COUNTER) {
+            textView.setText(value);
+        } else if (sensor.getType() == Sensor.TYPE_STEP_DETECTOR) {
+            // For test only. Only allowed value is 1.0 i.e. for step taken
+            textView.setText(value);
+        }
+    }
+
+    protected void onResume() {
+        super.onResume();
+        mSensorManager.registerListener(this, mStepCounterSensor,
+                SensorManager.SENSOR_DELAY_FASTEST);
+        mSensorManager.registerListener(this, mStepDetectorSensor,
+                SensorManager.SENSOR_DELAY_FASTEST);
+    }
+
+    protected void onStop() {
+        super.onStop();
+        mSensorManager.unregisterListener(this, mStepCounterSensor);
+        mSensorManager.unregisterListener(this, mStepDetectorSensor);
     }
 
     @Override
@@ -107,17 +148,6 @@ public class HealthRunActivity extends FragmentActivity implements OnMapReadyCal
 
     }
 
-    @Override
-    public void step(long timeNs) {
-
-    }
-
-//    Button btn_start = (Button) findViewById(R.id.btn_start);
-//        btn_start.setOnClickListener(new View.OnClickListener() {
-//        public void onClick(View view) {
-//            startActivity(new Intent(MainActivity.this, MainActivity3.class));
-//        }
-//    });
 
     //    //function to determine the distance run in kilometers using average step length for men and number of steps
 //    public float getDistanceRun(long steps){

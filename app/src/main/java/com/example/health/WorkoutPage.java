@@ -20,6 +20,7 @@ public class WorkoutPage extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_workout_page, container, false);
 
+
         btnWorkoutPlan = view.findViewById(R.id.btnworkoutplan);
         btnWorkoutPlan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,7 @@ public class WorkoutPage extends Fragment {
                 startActivity(intent);
             }
         });
+
 
         btnBmiCalculator = view.findViewById(R.id.btnbmicalculator);
         btnBmiCalculator.setOnClickListener(new View.OnClickListener() {

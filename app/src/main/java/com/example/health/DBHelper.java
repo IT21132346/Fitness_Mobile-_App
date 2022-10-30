@@ -40,13 +40,13 @@ public class DBHelper extends SQLiteOpenHelper {
         else return true;
     }
 
-    public Boolean updateUserData(String name, String dob, String allergies, String medConditions, byte[] image){
+    public Boolean updateUserData(String name, String dob, String allergies, String medConditions){
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("dob", dob);
         contentValues.put("allergies", allergies);
         contentValues.put("medConditions", medConditions);
-        contentValues.put("image", image);
+//        contentValues.put("image", image);
         Cursor cursor = DB.rawQuery("SELECT * FROM MedDetails WHERE name = ?", new String[] {name});
         if (cursor.getCount() > 0) {
             long result = DB.update("MedDetails", contentValues, "name=?", new String[]{name});
